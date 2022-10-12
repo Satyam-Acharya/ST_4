@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">ST4 - FrontEnd Development</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            
+        </header>
+        <div class="nav">
+            <div id="q1" onclick="tglQuetions(0)">1</div>
+            <div id="q2" onclick="tglQuetions(1)">2</div>
+            <div id="q3" onclick="tglQuetions(2)">3</div>
+            <div id="q4" onclick="tglQuetions(3)">4</div>
+            <div id="q5" onclick="tglQuetions(4)">5</div>
+        </div>
+        <section>
+            <div class="que_text">
+                <!-- Question -->
+            </div>
+            <div class="option_list">
+                <!-- Options -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Q No. -->
+            </div>
+            <div>
+                <button class="prev_btn show">Prev</button>
+                <button class="next_btn">Next</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Test Submitted Successfully</div>
+        <div class="score_text">
+            <!-- Score result  -->
+        </div>
+        <div class="buttons">
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
